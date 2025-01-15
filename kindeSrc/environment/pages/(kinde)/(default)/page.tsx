@@ -1,42 +1,38 @@
 "use server";
 
-import {
-  getKindeWidget,
-  getLogoUrl,
-  type KindePageEvent,
-} from "@kinde/infrastructure";
+import { getKindeWidget, type KindePageEvent } from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
-import { BackgroundGrid } from "../../components/background-grid";
-import { LoginHeader } from "../../components/login-header";
 import Layout from "../../layout";
 
 const styles: {
-  authContainer: React.CSSProperties;
+  container: React.CSSProperties;
+  sidePanel: React.CSSProperties;
+  loginForm: React.CSSProperties;
 } = {
-  authContainer: {
-    padding: "0.5rem 2rem 2rem",
-    position: "relative" as const,
-    top: "5rem",
-    marginInline: "auto" as const,
+  container: {
+    display: "flex",
+    height: "100vh",
+  },
+
+  sidePanel: {
     borderRadius: "1rem",
-    backgroundColor: "white",
-    maxWidth: "450px",
+    backgroundColor: "dodgerblue",
+    flex: 1,
+    margin: "0.5rem",
+  },
+  loginForm: {
+    minWidth: "400px",
+    margin: "2rem",
   },
 };
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
-      <BackgroundGrid />
-      <div style={styles.authContainer}>
-        <LoginHeader
-          heading={context.widget.content.heading}
-          description={context.widget.content.description}
-          logoAlt={context.widget.content.logo_alt}
-          logoUrl={getLogoUrl()}
-        />
-        <main>{getKindeWidget()}</main>
+      <div style={styles.container}>
+        <main style={styles.loginForm}>{getKindeWidget()}</main>
+        <div style={styles.sidePanel}></div>
       </div>
     </Layout>
   );
