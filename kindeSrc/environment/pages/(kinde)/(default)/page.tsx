@@ -25,7 +25,7 @@ const styles: {
   },
   loginForm: {
     minWidth: "400px",
-    margin: "2rem",
+    marginInline: "auto",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
