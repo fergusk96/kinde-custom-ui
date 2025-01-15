@@ -34,11 +34,13 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
       <div style={styles.container}>
-        <div>
-          <h2>{context.widget.content.heading}</h2>
-          <p>{context.widget.content.description}</p>
-        </div>
-        <main style={styles.loginForm}>{getKindeWidget()}</main>
+        <main style={styles.loginForm}>
+          <div>
+            <h2>{context.widget.content.heading}</h2>
+            <p>{context.widget.content.description}</p>
+            {getKindeWidget()}
+          </div>
+        </main>
         <div style={styles.sidePanel}></div>
       </div>
     </Layout>
