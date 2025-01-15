@@ -45,7 +45,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Layout context={context} request={request}>
       <div style={styles.container}>
         <main style={styles.loginForm}>
-          <div>
+          <div style={{ padding: "2rem" }}>
             <h2 style={styles.heading}>{context.widget.content.heading}</h2>
             <p style={styles.description}>
               {context.widget.content.description}
