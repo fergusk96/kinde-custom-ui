@@ -32,9 +32,10 @@ const styles: {
   heading: {
     marginBottom: "1rem",
     fontWeight: "600",
+    fontSize: "2rem",
   },
   description: {
-    marginBottom: "1rem",
+    marginBottom: "1.5rem",
   },
 };
 
