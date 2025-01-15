@@ -15,14 +15,13 @@ const styles: {
   container: {
     display: "flex",
     height: "100vh",
-    maxWidth: "1200px",
-    margin: "0 auto",
   },
   sidePanel: {
     borderRadius: "1rem",
     backgroundColor: "dodgerblue",
     flex: 1,
     margin: "0.5rem",
+    maxWidth: "800px",
   },
   loginForm: {
     minWidth: "400px",
