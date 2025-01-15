@@ -21,11 +21,11 @@ const styles: {
     backgroundColor: "dodgerblue",
     flex: 1,
     margin: "0.5rem",
-    maxWidth: "800px",
+    maxWidth: "1024px",
   },
   loginForm: {
     minWidth: "400px",
-    marginInline: "auto",
+    marginInline: "max(auto, 2rem)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
