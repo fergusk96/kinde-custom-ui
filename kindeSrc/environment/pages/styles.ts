@@ -35,4 +35,9 @@ export const generateCSSVariables = (): string => `
     display: flex;
     justify-content: center;
   }
+
+  [data-kinde-layout-auth-buttons-item] {
+    width: 3rem;
+    height: 3rem;
+  }
 `;
