@@ -15,6 +15,8 @@ const styles: {
   container: {
     display: "flex",
     height: "100vh",
+    maxWidth: "1200px",
+    margin: "0 auto",
   },
   sidePanel: {
     borderRadius: "1rem",
@@ -30,7 +32,6 @@ const styles: {
     justifyContent: "center",
   },
   heading: {
-    marginBottom: "1rem",
     fontWeight: "600",
     fontSize: "2rem",
   },
