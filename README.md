@@ -20,19 +20,10 @@ A fully customizable UI starter template built with React Server Components and 
 
 ## Quick Start
 
-1. Clone the template:
+In your project root directory, use the Kinde CLI and run
 
 ```bash
-git clone https://github.com/kinde-starter-kits/custom-ui-splitscape.git
-cd splitscape
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-# or
-yarn install
+kinde custom-ui --template splitscape
 ```
 
 ## Customization Guide
