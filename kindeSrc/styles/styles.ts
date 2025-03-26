@@ -13,7 +13,7 @@ const kindeVariables = {
   buttonSecondaryBorderRadius: "99px",
 } as const;
 
-export const generateCSSVariables = (): string => `
+export const getStyles = (): string => `
   :root {
     --kinde-base-font-family: ${kindeVariables.baseFontFamily};
     --kinde-control-select-text-border-radius: ${kindeVariables.controlSelectTextBorderRadius};

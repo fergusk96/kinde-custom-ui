@@ -4,6 +4,8 @@ A fully customizable UI starter template built with React Server Components and 
 
 ## Preview
 
+View [live demo]()
+
 ![SplitScape](image.png)
 
 ## Features
