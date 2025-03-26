@@ -10,6 +10,7 @@ const styles: {
 } = {
   loginForm: {
     minWidth: "400px",
+    width: "100%",
     margin: "0 auto",
     minInlineSize: "2rem",
     display: "flex",
