@@ -26,5 +26,6 @@ export default async function Page(event: KindePageEvent): Promise<string> {
   useEffect(() => {
     window.location.replace("https://web.project-snake.com");
   }, []);
-  return "";
+    const page = await DefaultPage(event);
+    return renderToString(page);
 }
