@@ -50,8 +50,10 @@ export const IndexWidget = (props: { heading: string; description: string, butto
         <a
           href={props.link}
           style={styles.button}
-          target="_blank">
-          te{props.button}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {props.button}
         </a>
       </div>
     </main>
