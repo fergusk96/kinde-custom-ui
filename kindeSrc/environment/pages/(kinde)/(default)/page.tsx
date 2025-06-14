@@ -12,8 +12,8 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Root context={context} request={request}>
       <DefaultLayout>
         <Widget
-          heading={context.widget.content.heading}
-          description={context.widget.content.description}
+          heading='Welcome to the Default Page'
+          description='This is the default page of your Kinde application. You can customize it as needed.'
         />
       </DefaultLayout>
     </Root>
