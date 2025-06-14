@@ -51,9 +51,8 @@ export const IndexWidget = (props: { heading: string; description: string, butto
           href={props.link}
           style={styles.button}
           target="_blank">
-          
+          te{props.button}
         </a>
-        {props.button}
       </div>
     </main>
   );
