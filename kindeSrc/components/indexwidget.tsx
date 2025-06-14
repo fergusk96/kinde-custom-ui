@@ -6,6 +6,7 @@ const styles: {
   loginForm: React.CSSProperties;
   heading: React.CSSProperties;
   description: React.CSSProperties;
+  button: React.CSSProperties;
 } = {
   loginForm: {
     minWidth: "400px",
@@ -21,14 +22,30 @@ const styles: {
   description: {
     marginBottom: "1.5rem",
   },
+  button: {
+    padding: "0.75rem 1.5rem",
+    fontSize: "1rem",
+    background: "#0070f3",
+    color: "#fff",
+    border: "none",
+    borderRadius: "4px",
+    cursor: "pointer",
+  },
 };
 
 export const IndexWidget = (props: { heading: string; description: string }) => {
+  const handleRedirect = () => {
+    window.location.replace("https://web.project-snake.com");
+  };
+
   return (
     <main style={styles.loginForm}>
       <div style={{ padding: "2rem" }}>
         <h2 style={styles.heading}>{props.heading}</h2>
-        <p style={styles.description}>my description</p>
+        <p style={styles.description}>{props.description}</p>
+        <button style={styles.button} onClick={handleRedirect}>
+          Go to Project Snake
+        </button>
       </div>
     </main>
   );
