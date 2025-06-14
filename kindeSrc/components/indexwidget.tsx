@@ -30,21 +30,18 @@ const styles: {
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
+    marginTop: "1.5rem", // Add this line
   },
 };
 
 export const IndexWidget = (props: { heading: string; description: string }) => {
-  const handleRedirect = () => {
-    window.location.replace("https://web.project-snake.win");
-  };
-
   return (
     <main style={styles.loginForm}>
       <div style={{ padding: "2rem" }}>
         <h2 style={styles.heading}>{props.heading}</h2>
         <p style={styles.description}>{props.description}</p>
         <a
-          href="https://web.project-snake.com"
+          href="https://web.project-snake.win"
           style={styles.button}
           target="_blank">
           Go to Project Snake
