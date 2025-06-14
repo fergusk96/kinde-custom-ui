@@ -34,7 +34,7 @@ const styles: {
   },
 };
 
-export const IndexWidget = (props: { heading: string; description: string }) => {
+export const IndexWidget = (props: { heading: string; description: string, button: string, link: string }) => {
   return (
     <main style={styles.loginForm}>
       <div
@@ -48,11 +48,12 @@ export const IndexWidget = (props: { heading: string; description: string }) => 
         <h2 style={styles.heading}>{props.heading}</h2>
         <p style={styles.description}>{props.description}</p>
         <a
-          href="https://web.project-snake.win"
+          href={props.link}
           style={styles.button}
           target="_blank">
-          Go to Project Snake
+          
         </a>
+        {props.button}
       </div>
     </main>
   );

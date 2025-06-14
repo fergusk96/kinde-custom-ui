@@ -13,8 +13,10 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Root context={context} request={request}>
       <DefaultLayout>
         <IndexWidget
-          heading='Welcome to the Default Page'
-          description='This is the default page of your Kinde application. You can customize it as needed.'
+          heading="Welcome! Access the Main Website"
+          description="To continue, please click the button below. You’ll be redirected to the main Project Snake website."
+          button="Go to Main Website"
+          link="https://web.project-snake.win"
         />
       </DefaultLayout>
     </Root>
