@@ -15,7 +15,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
         <IndexWidget
           heading="Welcome! Access the Main Website"
           description="To continue, please click the button below. You’ll be redirected to the main Project Snake website."
-          button="Go to Main Website"
+          button="Main Site"
           link="https://web.project-snake.win"
         />
       </DefaultLayout>
