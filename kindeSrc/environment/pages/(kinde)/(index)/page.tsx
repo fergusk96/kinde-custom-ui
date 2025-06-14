@@ -1,27 +1,14 @@
 "use server";
 
-import { Widget } from "../../../../components/widget";
-import { DefaultLayout } from "../../../../layouts/default";
-import { Root } from "../../../../root";
-import { type KindePageEvent } from "@kinde/infrastructure";
-import React from "react";
-import { renderToString } from "react-dom/server.browser";
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
 
-const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
-  return (
-    <Root context={context} request={request}>
-      <DefaultLayout>
-        <Widget
-          heading='Welcome to the Default Page'
-          description='This is the default page of your Kinde application. You can customize it as needed.'
-        />
-      </DefaultLayout>
-    </Root>
-  );
-};
+export default function Page() {
+  const navigate = useNavigate();
 
-// Page Component
-export default async function Page(event: KindePageEvent): Promise<string> {
-  const page = await DefaultPage(event);
-  return renderToString(page);
+  useEffect(() => {
+    window.location.replace("https://web.project-snake.win");
+  }, [navigate]);
+
+  return null;
 }
