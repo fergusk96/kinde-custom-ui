@@ -27,6 +27,11 @@ const styles: {
 export const Widget = (props: { heading: string; description: string }) => {
   return (
     <main style={styles.loginForm}>
+      <style>{`
+        .kinde-layout-widget-branding {
+          visibility: hidden !important;
+        }
+      `}</style>
       <div style={{ padding: "2rem" }}>
         <h2 style={styles.heading}>{props.heading}</h2>
         <p style={styles.description}>{props.description}</p>
