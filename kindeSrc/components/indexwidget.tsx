@@ -20,7 +20,7 @@ const styles: {
     fontSize: "2rem",
   },
   description: {
-    marginBottom: "1.5rem",
+    marginBottom: "2.5rem",
   },
   button: {
     padding: "0.75rem 1.5rem",
