@@ -1,7 +1,7 @@
 "use server";
 
 import { useEffect } from "react";
-import { IndexWidget } from "../../../../components/widget/";
+import { IndexWidget } from "../../../../components/indexwidget";
 import { DefaultLayout } from "../../../../layouts/default";
 import { Root } from "../../../../root";
 import { type KindePageEvent } from "@kinde/infrastructure";
