@@ -7,8 +7,6 @@ import { Root } from "../../../../root";
 import { type KindePageEvent } from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
-
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
