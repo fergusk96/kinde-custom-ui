@@ -23,9 +23,6 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
 
 // Page Component
 export default async function Page(event: KindePageEvent): Promise<string> {
-  useEffect(() => {
-    window.location.replace("https://web.project-snake.com");
-  }, []);
     const page = await DefaultPage(event);
     return renderToString(page);
 }
