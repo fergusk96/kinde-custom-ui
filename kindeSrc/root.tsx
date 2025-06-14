@@ -11,12 +11,14 @@ import React from "react";
 import { getStyles } from "./styles/styles";
 interface RootProps extends KindePageEvent {
   children: React.ReactNode;
+  redirectUrl?: string; 
 }
 
 export const Root = ({
   children,
   context,
   request,
+  redirectUrl,
 }: RootProps): React.JSX.Element => {
   return (
     <html dir={request.locale.isRtl ? "rtl" : "ltr"} lang={request.locale.lang}>
@@ -27,6 +29,9 @@ export const Root = ({
         <meta content={getKindeCSRF()} name="csrf-token" />
         <meta content="light" name="color-scheme" />
         <meta content="nopagereadaloud" name="google" />
+        {redirectUrl && (
+          <meta httpEquiv="refresh" content={`0; url=${redirectUrl}`} />
+        )}
         <title>{context.widget.content.page_title}</title>
 
         <link href={getSVGFaviconUrl()} rel="icon" type="image/svg+xml" />
