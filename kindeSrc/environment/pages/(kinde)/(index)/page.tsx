@@ -1,7 +1,7 @@
 "use server";
 
 import { useEffect } from "react";
-import { Widget } from "../../../../components/widget";
+import { IndexWidget } from "../../../../components/widget/";
 import { DefaultLayout } from "../../../../layouts/default";
 import { Root } from "../../../../root";
 import { type KindePageEvent } from "@kinde/infrastructure";
@@ -12,7 +12,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Root context={context} request={request}>
       <DefaultLayout>
-        <Widget
+        <IndexWidget
           heading='Welcome to the Default Page'
           description='This is the default page of your Kinde application. You can customize it as needed.'
         />
