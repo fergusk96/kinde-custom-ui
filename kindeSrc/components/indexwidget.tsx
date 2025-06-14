@@ -30,7 +30,7 @@ const styles: {
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
-    marginTop: "1.5rem", // Add this line
+    marginLeft: "25%",
   },
 };
 
