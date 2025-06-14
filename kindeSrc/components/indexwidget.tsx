@@ -1,6 +1,7 @@
 "use server";
 
 import React from "react";
+import { LoginButton } from "./login";
 
 const styles: {
   loginForm: React.CSSProperties;
@@ -30,7 +31,6 @@ const styles: {
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
-    marginTop: "1.5rem",
   },
 };
 
@@ -53,6 +53,7 @@ export const IndexWidget = (props: { heading: string; description: string }) => 
           target="_blank">
           Go to Project Snake
         </a>
+        <LoginButton />
       </div>
     </main>
   );
