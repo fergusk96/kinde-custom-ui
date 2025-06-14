@@ -30,7 +30,6 @@ export const Widget = (props: { heading: string; description: string }) => {
       <div style={{ padding: "2rem" }}>
         <h2 style={styles.heading}>{props.heading}</h2>
         <p style={styles.description}>{props.description}</p>
-        {getKindeWidget()}
       </div>
     </main>
   );
