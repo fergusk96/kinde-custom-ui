@@ -30,14 +30,21 @@ const styles: {
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
-    marginLeft: "25%",
+    marginTop: "1.5rem",
   },
 };
 
 export const IndexWidget = (props: { heading: string; description: string }) => {
   return (
     <main style={styles.loginForm}>
-      <div style={{ padding: "2rem" }}>
+      <div
+        style={{
+          padding: "2rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <h2 style={styles.heading}>{props.heading}</h2>
         <p style={styles.description}>{props.description}</p>
         <a
