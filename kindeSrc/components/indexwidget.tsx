@@ -35,7 +35,7 @@ const styles: {
 
 export const IndexWidget = (props: { heading: string; description: string }) => {
   const handleRedirect = () => {
-    window.location.replace("https://web.project-snake.com");
+    window.location.replace("https://web.project-snake.win");
   };
 
   return (
@@ -43,9 +43,12 @@ export const IndexWidget = (props: { heading: string; description: string }) => 
       <div style={{ padding: "2rem" }}>
         <h2 style={styles.heading}>{props.heading}</h2>
         <p style={styles.description}>{props.description}</p>
-        <button style={styles.button} onClick={handleRedirect}>
+        <a
+          href="https://web.project-snake.com"
+          style={styles.button}
+          target="_blank">
           Go to Project Snake
-        </button>
+        </a>
       </div>
     </main>
   );
