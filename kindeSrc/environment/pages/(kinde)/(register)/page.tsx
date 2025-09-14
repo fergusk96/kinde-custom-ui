@@ -12,7 +12,7 @@ const RegisterPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Root context={context} request={request}>
       <DefaultLayout>
         <Widget
-          heading="hello world"
+          heading={context.widget.content.heading}
           description={context.widget.content.description}
         />
       </DefaultLayout>
